@@ -1,11 +1,11 @@
 export default {
     gameid: new Date().getTime(),
     players: {
-        "aron" : {
+        "Player1" : {
             frames: [ ],
             score: 0
         },
-        "dan" : {
+        "Player2" : {
             frames: [ ],
             score: 0
         }
