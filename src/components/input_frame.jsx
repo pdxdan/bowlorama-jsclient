@@ -7,10 +7,15 @@ export default class InputFrame extends React.Component {
         super(props);
         this.setFrame = this.setFrame.bind(this);
         this.roll = this.roll.bind(this);
+        this.feelingLucky = this.feelingLucky.bind(this);
     }
 
     roll() {
         this.props.addFrameRemote( this.props.playerName, this.state.frameValue );
+    }
+
+    feelingLucky() {
+        this.props.addFrameRemote( this.props.playerName, Math.floor(Math.random() * 10) + 1 );
     }
 
     setFrame(event) {
@@ -21,9 +26,11 @@ export default class InputFrame extends React.Component {
 
     render() {
         return (
-            <div className="input-frame">
-                <input type="text" onChange={this.setFrame}></input>
-                <button onClick={this.roll}>Roll</button>
+            <div>
+                <div className="input-frame">
+                    <button onClick={this.roll}>Roll</button>
+                    <input type="text" onChange={this.setFrame}></input>
+                </div> | <button onClick={this.feelingLucky}>Feeling lucky!</button>
             </div>
         );
     }

@@ -35,7 +35,6 @@ export function addFrameRemote(player, frame) {
         dispatch(addFrame(player, frame));
         return client.addFrame(getState().get("data").get("gameid"), player, frame)
             .then((result) => {
-                debugger;
                 return dispatch(updatePlayer(player, result))
             });
     };

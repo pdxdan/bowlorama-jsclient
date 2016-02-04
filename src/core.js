@@ -27,7 +27,6 @@ export function addFrame( state, player, frame ) {
 }
 
 export function updatePlayer( state, player, result ) {
-    debugger;
     return state.setIn( ["data", "players", player, "frames" ], fromJS(result.ballhistory || []))
         .setIn( ["data", "players", player, "score" ], fromJS(result.score || 0) );
 }

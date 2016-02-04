@@ -17,13 +17,16 @@ class MainPage extends React.Component {
         const players = this.props.data.players;
 
         return (
-            <div className="scoreboard">
-                {Object.keys(players).map( playerName => {
-                    return <Player {...this.props}
-                        player={players[playerName]}
-                        playerName={playerName}
-                    />
-                })}
+            <div>
+                <img src="images/bowlorama.png" className="page-icon"/>
+                <div>
+                    {Object.keys(players).map( playerName => {
+                        return <Player {...this.props}
+                            player={players[playerName]}
+                            playerName={playerName}
+                        />
+                    })}
+                </div>
             </div>
         );
     }

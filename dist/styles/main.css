@@ -6,6 +6,7 @@ body {
 	font-weight: 900;
 	height: 100%;
 	overflow-y: hidden;
+	padding: 20px;
 }
 
 .player-table {
@@ -26,12 +27,24 @@ body {
 
 .input-frame {
 	display: inline-block;
+	margin-bottom: 5px;
 }
 
 .input-frame input {
 	width: 10vh;
+	margin-left: 1.0vh;
 }
 
 .input-frame button {
-	margin-left: 1.0vh;
+}
+
+.page-icon {
+	width: 15wh;
+	display: block;
+}
+
+.aligner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
