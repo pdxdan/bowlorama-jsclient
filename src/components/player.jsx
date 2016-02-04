@@ -4,6 +4,7 @@ import {Router, Route, Link} from 'react-router';
 
 import * as actionCreators from '../action_creators';
 import PlayerFrame from '../components/player_frame.jsx';
+import InputFrame from '../components/input_frame.jsx';
 
 export default class Player extends React.Component {
     constructor(props) {
@@ -12,7 +13,7 @@ export default class Player extends React.Component {
 
     render() {
         const frames = [];
-        const name = this.props.player.name;
+        const name = this.props.playerName;
         const score = this.props.player.score;
 
         for ( let i = 0; i < 22; i++ ) {
@@ -26,6 +27,7 @@ export default class Player extends React.Component {
         return (
             <div>
                 <h3>{name}</h3>
+                <InputFrame {...this.props}/>
                 <table className="player-table">
                     <tbody>
                     <tr>

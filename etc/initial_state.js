@@ -1,15 +1,13 @@
 export default {
-    gameid:0,
-    players: [
-        {
-            name: "aron",
-            frames: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-            score: 100
+    gameid: new Date().getTime(),
+    players: {
+        "aron" : {
+            frames: [ ],
+            score: 0
         },
-        {
-            name: "dan",
-            frames: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-            score: 100
+        "dan" : {
+            frames: [ ],
+            score: 0
         }
-    ]
+    }
 }

@@ -23,3 +23,15 @@ body {
 	border: 3px solid;
 	background-color: lightblue;
 }
+
+.input-frame {
+	display: inline-block;
+}
+
+.input-frame input {
+	width: 10vh;
+}
+
+.input-frame button {
+	margin-left: 1.0vh;
+}

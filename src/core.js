@@ -18,3 +18,16 @@ export function reset() {
 export function setBoardState( state, boardState ) {
     return state;
 }
+
+export function addFrame( state, player, frame ) {
+    var playerFrames = state.getIn( ["data", "players", player, "frames"]).toJS();
+    playerFrames.push(frame);
+    return state.setIn( ["data", "players", player, "frames" ], fromJS(playerFrames));
+
+}
+
+export function updatePlayer( state, player, result ) {
+    debugger;
+    return state.setIn( ["data", "players", player, "frames" ], fromJS(result.ballhistory || []))
+        .setIn( ["data", "players", player, "score" ], fromJS(result.score || 0) );
+}

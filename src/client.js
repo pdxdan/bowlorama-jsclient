@@ -13,3 +13,17 @@ export function getBoardState() {
         })
     }).then( (resp) => resp.json() );
 }
+
+export function addFrame(gameid, player, ball) {
+    let apiURL = deqConfig.apiRestProtocol + "://" + deqConfig.apiHostPort + "/prod/bowlorama-append-ball-to-history";
+
+    let postBody = {"gameid":gameid,"player":player,"ball":ball};
+
+    return fetch(apiURL, {
+        method: 'POST',
+        headers: new Headers({
+            'accept': 'application/json',
+        }),
+        body: JSON.stringify(postBody)
+    }).then( (resp) => resp.json() );
+}

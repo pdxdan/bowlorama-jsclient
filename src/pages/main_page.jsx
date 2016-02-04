@@ -18,9 +18,10 @@ class MainPage extends React.Component {
 
         return (
             <div className="scoreboard">
-                {players.map( player => {
+                {Object.keys(players).map( playerName => {
                     return <Player {...this.props}
-                        player={player}
+                        player={players[playerName]}
+                        playerName={playerName}
                     />
                 })}
             </div>
