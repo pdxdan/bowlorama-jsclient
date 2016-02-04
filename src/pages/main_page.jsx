@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import {Router, Route, Link} from 'react-router';
 
 import * as actionCreators from '../action_creators';
+import Player from '../components/player.jsx';
 
 class MainPage extends React.Component {
     constructor(props) {
@@ -13,8 +14,15 @@ class MainPage extends React.Component {
     }
 
     render() {
+        const players = this.props.data.players;
+
         return (
             <div className="scoreboard">
+                {players.map( player => {
+                    return <Player {...this.props}
+                        player={player}
+                    />
+                })}
             </div>
         );
     }

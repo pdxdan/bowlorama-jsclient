@@ -4,8 +4,6 @@ import initialJson from '../etc/initial_state.js';
 
 let initialStateTemplate = {
     data: initialJson,
-    gameState : {
-    },
     session: {
     }
 };

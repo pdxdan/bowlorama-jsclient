@@ -2,7 +2,8 @@ import {Map, List, fromJS} from 'immutable';
 
 import {
     reset,
-    setBoardState
+    setBoardState,
+    INITIAL_STATE
 } from './core';
 
 export default function reducer(state = INITIAL_STATE, action) {
