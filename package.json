@@ -1,7 +1,7 @@
 {
   "name": "bowlarama-ui",
   "version": "0.0.1",
-  "description": "Frontend for Dan Bowlerama",
+  "description": "Web Frontend for Bowlorama",
   "main": "index.js",
   "scripts": {
     "dev": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --port 3000 --progress",
