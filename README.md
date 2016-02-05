@@ -5,8 +5,8 @@ the bowling game state. It is a static site served from an S3 bucket and communi
 via AWS API Gateway. 
 
 The other pieces of Bowlorama are in the following repos:
-https://github.com/pdxdan/bowlorama-calculator
-https://github.com/pdxdan/bowlorama-history-tracker
+- https://github.com/pdxdan/bowlorama-calculator
+- https://github.com/pdxdan/bowlorama-history-tracker
 
 ## Usage
 
