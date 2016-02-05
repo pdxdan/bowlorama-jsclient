@@ -4,6 +4,10 @@ Part of the bowlorama demo application. This piece provides a simple Javascript 
 the bowling game state. It is a static site served from an S3 bucket and communicates only with AWS Lambda functions
 via AWS API Gateway. 
 
+The other pieces of Bowlorama are in the following repos:
+https://github.com/pdxdan/bowlorama-calculator
+https://github.com/pdxdan/bowlorama-history-tracker
+
 ## Usage
 
 To build and run locally you'll need NPM and webpack.
